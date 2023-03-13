@@ -12,8 +12,6 @@ public class Main {
 
         ArrayList<Pelicula> listaPeliculas = svp.listaPelis();
 
-        // películas con una duración mayor a 1 hora.
-
         System.out.println("");
         System.out.println("PELICULAS MAYOR A UNA HORA");
         svp.pelisDuracion(listaPeliculas);
@@ -26,7 +24,13 @@ public class Main {
         svp.pelisDuracionDescendente(listaPeliculas);
         System.out.println("");
         System.out.println("PELICULAS ORDEN ALFABETICO POR TITULO");
-        svp.pelisTituloAlfabetico(listaPeliculas);
+        //svp.pelisTituloAlfabetico(listaPeliculas);
+
+
+
+
+
+
         System.out.println("");
         System.out.println("PELICULAS ORDEN ALFABETICO POR DIRECTOR");
         svp.pelisDirectorAlfabetico(listaPeliculas);

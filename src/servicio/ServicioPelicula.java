@@ -87,11 +87,9 @@ public class ServicioPelicula {
 
     public void pelisDuracionDescendente(ArrayList<Pelicula> listaPelis){
         ArrayList<Pelicula> pelisOrdenDescendente = new ArrayList<>();
-
         Collections.sort(listaPelis, new Comparator<Pelicula>() {
             @Override
             public int compare(Pelicula o1, Pelicula o2) {
-
                 return Double.compare(o2.getDuracion(), o1.getDuracion());
             }
         });
@@ -99,12 +97,13 @@ public class ServicioPelicula {
     }
 
 
-    public void pelisTituloAlfabetico(ArrayList<Pelicula> listaPelis){
+    /*public void pelisTituloAlfabetico(ArrayList<Pelicula> listaPelis){
         ArrayList<Pelicula> pelisAlfabeticamente = new ArrayList<>();
         Collections.sort(listaPelis, Comparator.comparing(Pelicula::getTitulo));
-
         mostrarPelis(listaPelis);
-    }
+    }*/
+
+
 
     public void pelisDirectorAlfabetico(ArrayList<Pelicula> listaPelis){
         ArrayList<Pelicula> pelisDirectorAlfabeticamente = new ArrayList<>();
