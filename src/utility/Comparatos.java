@@ -1,7 +1,10 @@
+package utility;
+
 import entidades.Pelicula;
+
 import java.util.Comparator;
 
-public class Compators {
+public class Comparatos {
 
     public static Comparator<Pelicula> ordenTitulo= new Comparator<Pelicula>() {
         @Override
@@ -9,7 +12,6 @@ public class Compators {
             return o1.getTitulo().compareToIgnoreCase(o2.getTitulo());
         }
     };
-
 
 
 }

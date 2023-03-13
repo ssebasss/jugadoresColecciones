@@ -1,7 +1,6 @@
 package servicio;
-
 import entidades.Pelicula;
-
+import utility.Comparatos;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -103,6 +102,10 @@ public class ServicioPelicula {
         mostrarPelis(listaPelis);
     }*/
 
+    public void orderTitle(ArrayList <Pelicula> lista){
+        Collections.sort(lista, Comparatos.ordenTitulo);
+        mostrarPelis(lista);
+    }
 
 
     public void pelisDirectorAlfabetico(ArrayList<Pelicula> listaPelis){
@@ -111,6 +114,8 @@ public class ServicioPelicula {
 
         mostrarPelis(listaPelis);
     }
+
+
 
 
 
